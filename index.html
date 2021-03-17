@@ -1,0 +1,58 @@
+<!-- CALCULADORA HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Encabezado -->
+  <head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Cuerpo del código -->
+  <body>
+    <form name="Calculadora">
+      <!-- El texto del principo de la página -->
+      <div class="container phrases">
+        <div class="frase1">CALCULADORA SKYLAB</div>
+        <div class="frase2">A continuación haz el cálculo que desee.</div>
+      </div>
+      <!-- La pantalla de la calculadora -->
+      <div class="container screen">
+        <!-- He escogido usar un input, diciendo que no se pueda escribir en él y que muestre un 0 si no hay nada en él -->
+        <input class="screen-results" disabled type="text" id="screen-results" name="results" placeholder="0">
+      </div>
+      <!-- Las diferentes teclas (números, operadores, AC y C) -->
+      <div class="container">
+        <div class="button number" id="button-one">1</div>
+        <div class="button number" id="button-two">2</div>
+        <div class="button number" id="button-three">3</div>
+        <div class="button oper" id="button-sum">+</div>
+      </div>
+      <div class="container">
+        <div class="button number" id="button-four">4</div>
+        <div class="button number" id="button-five">5</div>
+        <div class="button number" id="button-six">6</div>
+        <div class="button oper" id="button-rest">-</div>
+      </div>
+      <div class="container">
+        <div class="button number" id="button-seven">7</div>
+        <div class="button number" id="button-eight">8</div>
+        <div class="button number" id="button-nine">9</div>
+        <div class="button oper" id="button-mul">*</div>
+      </div>
+      <div class="container">
+        <div class="button number" id="button-cero">0</div>
+        <div class="button number" id="button-dot">.</div>
+        <div class="button" id="button-equal">=</div>
+        <div class="button oper" id="button-div">/</div>
+      </div>
+      <div class="container">
+        <div class="button ac" id="button-ac">AC</div>
+        <div class="button clear" id="button-clean">C</div>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

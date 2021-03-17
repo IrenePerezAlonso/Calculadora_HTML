@@ -1,0 +1,88 @@
+/*Diseño para todos los container*/
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+/*Diseño de ambas frases*/
+.frase1{
+  font-family: 'Work Sans';
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(112, 66, 22);
+  padding: 2px 5px;
+  margin-bottom: 2px;
+}
+
+.frase2{
+  font-family: 'Work Sans';
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(112, 66, 22);
+  padding: 2px 5px;
+  margin-bottom: 25px;
+}
+
+.container.phrases {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Diseño de la pantalla (el input)*/
+.screen-results{
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(231, 217, 191);
+  border-radius: 8px;
+  border-color: rgb(112, 66, 22);
+  width: 235px;
+  padding: 15px 15px;
+  text-align: right;
+  margin: 5px;
+}
+
+/*Diseño de los botones*/
+.button{
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 30px;
+  margin: 4px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 181, 81);
+  padding: 20px 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30px;
+  box-shadow: 3px 3px 0px rgb(112, 66, 22);
+  cursor: pointer;
+}
+
+/*Usamos el :hover para cuando el ratón pase encima de las teclas*/
+.button:hover {
+  opacity: 0.75;
+}
+
+/*Usamos el :active para cuando el ratón "clickea" en el botón, le decimos que traslade los mismos píxeles que los del box-shadow para dar la sensación de pulsar*/
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+/*Diseño de los botones de la suma, resta, división, multiplicación, igual y punto*/
+.oper {
+  background-color: rgb(177, 162, 123);
+}
+
+/*Diseño del botón AC*/
+.ac {
+  background-color: rgb(107, 98, 75);
+  width: 165px;
+  text-align: left;
+}
+
+/*Diseño del botón de borrar C*/
+.clear {
+  text-align: center;
+  width: 30px;
+}
+
